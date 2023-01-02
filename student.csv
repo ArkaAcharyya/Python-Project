@@ -1,0 +1,11 @@
+import csv
+fields=['Student Id','Name','Class Roll number','Batch ID']
+rows=[['CSE2201', 'SUMIT AGGARWAL', '1', 'CSE22'],
+      ['CSE2101', 'AMAN VERMA', '1', 'CSE21'],
+      ['ECE2201', 'ROHIT GUPTA', '1', 'ECE22'],
+      ['ECE2202', 'VISHAL KUMAR', '2', 'ECE22']]
+filename="student_records.csv"
+with open(filename, 'w') as csvfile:
+      csvwriter=csv.writer(csvfile)
+      csvwriter.writerow(fields)
+      csvwriter.writerows(rows)

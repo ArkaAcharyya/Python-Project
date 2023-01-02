@@ -1,0 +1,11 @@
+import csv
+fields=['Course Id','Course Name','Student Id','Marks Obtained']
+rows=[['C001', 'PYTHON PROGRAMMING', 'CSE2201', '95'],
+      ['C002', 'PHYSICS', 'CSE2201', '78'],
+      ['C003', 'CHEMISTRY', 'CSE2201', '91']]
+filename="course_records.csv"
+with open(filename, 'w') as csvfile:
+      csvwriter=csv.writer(csvfile)
+      csvwriter.writerow(fields)
+      csvwriter.writerows(rows)
+
